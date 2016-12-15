@@ -1816,13 +1816,17 @@ describe('BrowserWindow module', function () {
             preloadProperty: 'number',
             pageProperty: 'undefined',
             typeofRequire: 'function',
-            typeofProcess: 'object'
+            typeofProcess: 'object',
+            typeofArrayPush: 'function',
+            typeofFunctionApply: 'function',
           },
           pageContext: {
             preloadProperty: 'undefined',
             pageProperty: 'string',
             typeofRequire: 'undefined',
-            typeofProcess: 'undefined'
+            typeofProcess: 'undefined',
+            typeofArrayPush: 'number',
+            typeofFunctionApply: 'boolean',
           }
         })
         done()
