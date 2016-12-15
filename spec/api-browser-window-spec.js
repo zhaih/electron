@@ -1806,7 +1806,7 @@ describe('BrowserWindow module', function () {
     })
   })
 
-  describe('isolated option', () => {
+  describe('contextIsolation option', () => {
     it('separates the page context from the Electron/preload context', (done) => {
       if (w != null) w.destroy()
 
@@ -1831,7 +1831,7 @@ describe('BrowserWindow module', function () {
       w = new BrowserWindow({
         show: false,
         webPreferences: {
-          isolated: true,
+          contextIsolation: true,
           preload: path.join(fixtures, 'api', 'isolated-preload.js')
         }
       })
